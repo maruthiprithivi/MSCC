@@ -1,0 +1,8 @@
+# To roll out the MariaDB docker container I used for this challenge
+docker run --name moneysmart -p 3306:3306 -p 8080:8080 -e MYSQL_ROOT_PASSWORD=followup -d mariadb
+
+# To access the container
+docker exec -it moneysmart bash
+
+# To access MariaDB CLI
+mysql --user=root --password=followup moneysmart

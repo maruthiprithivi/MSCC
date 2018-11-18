@@ -1,0 +1,14 @@
+db:
+  connectionstring: localhost
+  username: root
+  password: followup
+  dbname: moneysmart
+
+tables:
+  experiment:
+    tablename: experimentGroups
+    fields: "visitDate, groupBucket, experiment"
+
+files:
+  location: /Users/maruthi/litterBox/dataEngineering/moneySmart/data/
+  file1: lighthouse-logs.log
